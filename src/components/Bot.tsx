@@ -329,7 +329,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
         return item;
       });
 
-      // Add apiMessage if resultText exists and ui not updated
+      // Add apiMessage if resultText exists and ui updated
       if (resultText && !uiUpdated) {
         updated.push({
           message: resultText,
